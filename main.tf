@@ -5,7 +5,7 @@ resource "alicloud_vpc" "vpc" {
 #  count = "${var.env == "sandbox" ? 1 : 0}"
   name = "mumbai_vpc"
   cidr_block = var.vpc_cidr
-  tags = "vpc_mumbai"
+#  tags = "vpc_mumbai"
 }
 
 
