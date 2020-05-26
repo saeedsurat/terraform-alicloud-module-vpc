@@ -16,7 +16,7 @@ resource alicloud_vswitch "vswitch_1" {
   cidr_block = element(var.vswitch_cidr,count.index)
   availability_zone = element(var.zones,count.index)
   name = "vswitch1-${count.index}"
-  tag = ${count.index}
+  tag = "vswitch_1"
 }
 
 
