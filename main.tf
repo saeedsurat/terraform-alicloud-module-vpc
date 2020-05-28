@@ -16,6 +16,11 @@ resource alicloud_vswitch "vswitch_1" {
   availability_zone = element(var.zones,count.index)
   name = "vswitch1-${count.index}"
 #  tags = "vswitch_1"
+
+  tags = {
+    Created      = "Terraform"
+    Environment = "dev"
+  }
 }
 
 
