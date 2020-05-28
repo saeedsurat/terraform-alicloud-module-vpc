@@ -8,7 +8,6 @@ resource "alicloud_vpc" "vpc" {
 #  tags = "vpc_mumbai"
 }
 
-
 # Loop and if condition example
 resource alicloud_vswitch "vswitch_1" {
   count = length(var.zones)
